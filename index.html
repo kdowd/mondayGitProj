@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      html,
+      body {
+        background-image: linear-gradient(dodgerblue, azure);
+        background-repeat: no-repeat;
+
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size: xx-large;
+
+        min-height: 100vh;
+      }
+
+      ul {
+        counter-reset: my-counter;
+        list-style: none;
+      }
+
+      ul li::before {
+        counter-increment: my-counter;
+        content: counter(my-counter) ': ';
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Kevin-John Dowd : London</li>
+      <li>??????</li>
+      <li>??????</li>
+      <li>??????</li>
+      <li>??????</li>
+      <li>??????</li>
+      <li>??????</li>
+      <li>??????</li>
+    </ul>
+  </body>
+</html>
